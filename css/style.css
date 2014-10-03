@@ -37,12 +37,12 @@ body {
 #name {
     font-family: 'Pacifico', Helvetica, sans-serif;
     font-size: 400%;
-    background-color: #E98977;
-    background: rgba(233,137,119, 0.8);
     width: 100%;
 }
 
 .sticky {
+    background-color: #E98977;
+    background: rgba(233,137,119, 0.75);
     position: fixed;
     top: 0;
 }
