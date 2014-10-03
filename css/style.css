@@ -70,14 +70,15 @@ a:hover {
     width: 150px;
     background-color: #F4B36C;
     margin: 50px;
+    border-style: solid;
+    border-color: #F4B36C;
+    border-width: 1px;
     border-radius: 75px;
     display: inline-block;
     color: #FFF;
 }
 
 .circle:hover {
-    height: 149px;
-    width: 149px;
     background-color: #F8F4D7;
     border-style: solid;
     border-color: #E98977;
