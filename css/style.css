@@ -10,22 +10,48 @@
        url('../fonts/Chunkfive-webfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
+html {
+    /* heights of header's parents (in this case html and body) have to be 100%
+       for header to have 100% height */
+    height: 100%;
+}
+
 body {
+    /* heights of header's parents (in this case html and body) have to be 100%
+       for header to have 100% height */
     font-family: Arial, Helvetica, sans-serif;
     color: #E98977;
     margin: 0;
+    height: 100%;
 }
 
-.center {
+.center-horiz {
     margin 0 auto;
     display: block;
     text-align: center;
 }
 
+.center-vert {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 #header {
     background-color: #E98977;
     color: #FFF;
-    padding: 225px 0;
+    height: 100%;
+}
+
+/* to vertically center face-icon and name */
+#header:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  /* this just takes care of whitespace added by having display:inline-block
+     (there are other methods) */
+  margin-left: -0.25em;
 }
 
 #header #face-icon {
@@ -34,7 +60,7 @@ body {
     padding-bottom: 50px;
 }
 
-#name {
+#header #name {
     font-family: 'Pacifico', Helvetica, sans-serif;
     font-size: 400%;
     width: 100%;
@@ -45,6 +71,7 @@ body {
     background: rgba(233,137,119, 0.75);
     position: fixed;
     top: 0;
+    left: 0;
 }
 
 #content {
