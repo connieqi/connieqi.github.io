@@ -79,6 +79,11 @@ body {
     background-color: #F8F4D7;
 }
 
+#words {
+    width: 500px;
+    display: inline-block;
+}
+
 a {
     text-decoration: none;
     color: #E98977;
