@@ -77,7 +77,7 @@ body {
 
 #content {
     padding: 200px 0;
-    /*background-color: #F8F4D7;*/
+    background-color: #F8F4D7;
     background: url('../img/josh_tree.png') no-repeat;
     background-size: 100%;
 }
